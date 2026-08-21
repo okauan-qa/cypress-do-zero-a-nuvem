@@ -8,7 +8,7 @@
   "test": "cypress run",
   "cy:mobile": "cypress open --config viewportWidth=410,viewportHeight=860",
   "test:mobile": "cypress run --config viewportWidth=410,viewportHeight=860",
-  "test:cloud": "npx cypress run --record --key f59b8aef-7edb-47e1-84a4-f5799d4735f7"
+  "test:cloud": "npx cypress run --record"
   },
 
   "repository": {
