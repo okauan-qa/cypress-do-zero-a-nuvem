@@ -42,7 +42,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     
   })
 
-  it.only('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', () =>{
+  it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', () =>{
     cy.get('#firstName').type('Kauan')
     cy.get('#lastName').type('Brito')
     cy.get('#email').type('error@gmail.com')
@@ -177,7 +177,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     .click()
     cy.contains('h1','Política de Privacidade')
   })
-  it.only('testa a página da política de privacidade de forma independente', ()=>{
+  it('testa a página da política de privacidade de forma independente', ()=>{
     cy.visit('src/privacy.html')
     
     cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT - Política de Privacidade')
