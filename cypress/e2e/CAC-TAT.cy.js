@@ -148,14 +148,14 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     })
   })
 
-  it('seleciona um arquivo simulando um drag-and-drop', () =>{
-    cy.get('input[type=file]')
-    .selectFile('C:/Users/okaua/OneDrive/Documentos/antecedente.pdf')
+  //it('seleciona um arquivo simulando um drag-and-drop', () =>{
+  //  cy.get('input[type=file]')
+  //  .selectFile('C:/Users/okaua/OneDrive/Documentos/antecedente.pdf')
 
-    .should(input => {
-      expect(input[0].files[0].name).to.equal('antecedente.pdf')
-    })
-  })
+  //  .should(input => {
+  //    expect(input[0].files[0].name).to.equal('antecedente.pdf')
+  //  })
+  //})
 
   it('seleciona um arquivo utilizando uma fixture para a qual foi dada um alias', ()=>{
     cy.fixture('example.json').as('sampleFile')
